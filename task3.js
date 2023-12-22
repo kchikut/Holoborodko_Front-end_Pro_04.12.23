@@ -1,8 +1,8 @@
 const userInput = prompt('Введіть будь ласка число:');
-if (userInput && userInput.trim() && !isNaN(+userInput) && userInput > 1) {
+if (userInput && userInput.trim() && !isNaN(+userInput)) {
     const number = +userInput;
     let isPowerOfThree = false;
-    if (number>0) {
+    if (Number.isInteger(number)) {
         let power = 0;
         let result = 1;
         while (result<number) {
